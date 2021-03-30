@@ -56,7 +56,8 @@ jobs:
       - name: Build Tests
         run: |
           cd build
-          cmake . -DCMAKE_PREFIX_PATH=$(pwd)/install -DBUILD_TESTING=ON
+          export INSTALL_DIR=$(pwd)/install/PFUNIT-*
+          cmake . -DCMAKE_PREFIX_PATH=$INSTALL_DIR -DBUILD_TESTING=ON
           make -j$(nproc) tests
       - name: Run Tests
         run: |
