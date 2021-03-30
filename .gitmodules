@@ -10,3 +10,6 @@
 [submodule "fArgParse"]
 	path = fArgParse
 	url = https://github.com/LiamBindle/fArgParse.git
+[submodule "yaFyaml"]
+	path = yaFyaml
+	url = https://github.com/LiamBindle/yaFyaml.git
