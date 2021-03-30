@@ -56,7 +56,7 @@ jobs:
       - name: Build Tests
         run: |
           cd build
-          cmake . -DCMAKE_PREFIX_PATH=./install -DBUILD_TESTING=ON
+          cmake . -DCMAKE_PREFIX_PATH=$(pwd)/install -DBUILD_TESTING=ON
           make -j$(nproc) tests
       - name: Run Tests
         run: |
