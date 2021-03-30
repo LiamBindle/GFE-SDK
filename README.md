@@ -1,3 +1,5 @@
+[![CI Tests](https://github.com/LiamBindle/gf-sdk/actions/workflows/ci-tests.yml/badge.svg)](https://github.com/LiamBindle/gf-sdk/actions/workflows/ci-tests.yml)
+
 ## Set up
 
 ```console
