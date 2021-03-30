@@ -13,3 +13,6 @@
 [submodule "yaFyaml"]
 	path = yaFyaml
 	url = https://github.com/LiamBindle/yaFyaml.git
+[submodule "pFlogger"]
+	path = pFlogger
+	url = https://github.com/LiamBindle/pFlogger.git
