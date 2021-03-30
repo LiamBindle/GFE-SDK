@@ -51,8 +51,8 @@ jobs:
         run: |
           mkdir -p build
           cd build
-          cmake .. -DCMAKE_Fortran_COMPILER=${FC} -DCMAKE_INSTALL_PREFIX=./install -DCMAKE_PREFIX_PATH=./install
-          make -j$(nproc)
+          cmake .. -DCMAKE_Fortran_COMPILER=${FC} -DCMAKE_INSTALL_PREFIX=$(pwd)/install
+          make -j$(nproc) install
       - name: Build Tests
         run: |
           cd build
