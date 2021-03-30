@@ -7,6 +7,8 @@ cmake_policy(SET CMP0074 NEW)
 
 option(GIT_SUBMODULE "" OFF)
 
+enable_testing()
+
 add_subdirectory(gFTL)
 add_subdirectory(gFTL-shared)
 add_subdirectory(fArgParse)
