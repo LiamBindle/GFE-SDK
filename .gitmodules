@@ -1,0 +1,12 @@
+[submodule "gFTL"]
+	path = gFTL
+	url = https://github.com/LiamBindle/gFTL.git
+[submodule "gFTL-shared"]
+	path = gFTL-shared
+	url = https://github.com/LiamBindle/gFTL-shared.git
+[submodule "pFUnit"]
+	path = pFUnit
+	url = https://github.com/LiamBindle/pFUnit.git
+[submodule "fArgParse"]
+	path = fArgParse
+	url = https://github.com/LiamBindle/fArgParse.git
