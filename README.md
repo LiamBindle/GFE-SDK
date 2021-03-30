@@ -15,6 +15,6 @@ $ make -j4 install
 
 ## Running tests
 ```console
-$ cmake . -DCMAKE_PREFIX_PATH=/path/installed/to/PFUNIT-4.2/cmake
+$ cmake . -DBUILD_TESTING=ONE -DCMAKE_PREFIX_PATH=/path/installed/to/
 $ make -j4 tests
 ```
