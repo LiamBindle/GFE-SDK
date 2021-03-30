@@ -47,7 +47,7 @@ jobs:
         with:
           fetch-depth: 1
           submodules: recursive
-      - name: Build and install
+      - name: Build and Install
         run: |
           mkdir -p build
           cd build
@@ -56,7 +56,7 @@ jobs:
       - name: Build Tests
         run: |
           cd build
-          export INSTALL_DIR="find $(pwd)/install -type d -name 'PFUNIT-*'"
+          export INSTALL_DIR="$(find $(pwd)/install -type d -name 'PFUNIT-*')"
           echo "$INSTALL_DIR"
           cmake . -DCMAKE_PREFIX_PATH=$INSTALL_DIR -DBUILD_TESTING=ON
           make -j$(nproc) tests
